@@ -2,9 +2,9 @@ from base64 import b64decode
 import time
 from selenium import webdriver
 
-options = webdriver.ChromeOptions()
+#options = webdriver.ChromeOptions()
 #options.add_argument("--headless")
-driver = webdriver.Chrome(options=options)
+driver = webdriver.Chrome()#(options=options)
 driver.get('https://omniglot.com/language/phrases/malayalam.php')
 
 #a = driver.find_element_by_css_selector("#loanamountslider")
