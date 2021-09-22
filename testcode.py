@@ -4,7 +4,15 @@ from selenium import webdriver
 
 #options = webdriver.ChromeOptions()
 #options.add_argument("--headless")
-driver = webdriver.Chrome()#(options=options)
+#driver = webdriver.Chrome()#(options=options)
+
+chrome_options = webdriver.ChromeOptions()
+chrome_options.add_argument('--no-sandbox')
+chrome_options.add_argument('--window-size=1420,1080')
+chrome_options.add_argument('--headless')
+chrome_options.add_argument('--disable-gpu')
+driver = webdriver.Chrome(chrome_options=chrome_options)
+
 driver.get('https://omniglot.com/language/phrases/malayalam.php')
 
 #a = driver.find_element_by_css_selector("#loanamountslider")
