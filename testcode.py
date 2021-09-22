@@ -3,7 +3,7 @@ import time
 from selenium import webdriver
 
 options = webdriver.ChromeOptions()
-options.add_argument("--headless")
+#options.add_argument("--headless")
 driver = webdriver.Chrome(options=options)
 driver.get('https://omniglot.com/language/phrases/malayalam.php')
 
