@@ -21,7 +21,7 @@ chrome_options.add_argument('--no-sandbox')
 chrome_options.add_argument("window-size=1400,2100") 
 chrome_options.add_experimental_option('prefs', profile)
 chrome_options.add_argument('--kiosk-printing')
-chrome_options.add_argument('--headless')
+#chrome_options.add_argument('--headless')
 
 driver = webdriver.Chrome(chrome_options=chrome_options)
 #driver.get('https://merahindi.com/category/hindi-sentences/3')
