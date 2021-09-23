@@ -1,6 +1,7 @@
 from base64 import b64decode
 import time
 from selenium import webdriver
+import chromedriver_binary
 
 #options = webdriver.ChromeOptions()
 #options.add_argument("--headless")
