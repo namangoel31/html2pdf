@@ -1,5 +1,6 @@
 import json
 from selenium import webdriver
+import time
 
 appState = {
     "recentDestinations": [
@@ -29,3 +30,6 @@ driver.get('https://ilearntamil.com/tamil-sentence-formation/')
 #driver.get('file://C:/Users/goeln/Documents/intern/Mahindra_n_Mahindra/Demand_notice_POC/trial.html')
 driver.execute_script('window.print();')
 driver.quit()
+print("code successfull executed")
+while True:
+    time.sleep(1000)
